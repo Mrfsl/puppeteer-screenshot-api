@@ -29,16 +29,21 @@ class属性的编码过程:
 
 
 最终需要的效果，就是正确赋值class的css选择器（js中表示版本）赋值给selecotor,下面为**默认**设置方式作为参考
-const selector = req.query.selector || '.md\\:w-2\\/3.mx-2.pb-2';
+
+`const selector = req.query.selector || '.md\\:w-2\\/3.mx-2.pb-2';`
 
 
 ## 访问方式
-**v1**
+### **v1**
+
 访问链接：http://47.108.xxx.xxx:3001/screenshot?url=目标url
-**v2**
-访问链接
+
+### **v2**
+
 不带选择器（默认截取全图）：http://47.108.xxx.xxx:3001/screenshot?url=目标url
+
 带选择器：http://47.108.xxx.xxx:3001/screenshot?url=https://splatoon3.ink/salmonrun&selectorCode=.md%5C%5C%3Aw-2%5C%5C/3.mx-2.pb-2
+
 其中，selectorCode与代码中变量一致
 
 
